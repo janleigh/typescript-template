@@ -10,8 +10,11 @@
 	"license": "MIT",
 	"scripts": {
 		"build": "yarn build:clean && yarn format:check && yarn compile",
+		"build:production": "yarn build:clean && yarn format:check && yarn lint && yarn compile",
 		"build:clean": "yarn rimraf ./dist/",
 		"compile": "npx sucrase src -d dist --transforms typescript",
+		"lint": "eslint . --ignore-path .gitignore --ext .ts",
+		"lint:fix": "eslint . --ignore-path .gitignore --ext .ts --fix",
 		"format": "prettier --write src",
 		"format:check": "prettier --check src"
 	},

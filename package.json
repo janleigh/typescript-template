@@ -1,0 +1,24 @@
+{
+	"name": "typescript-template",
+	"description": "To be filled.",
+	"version": "1.0.0",
+	"author": {
+		"name": "Jan Leigh Muñoz",
+		"email": "janleigh@proton.me"
+	},
+	"type": "module",
+	"license": "MIT",
+	"scripts": {
+		"build": "yarn build:clean && yarn format:check && yarn compile",
+		"build:clean": "yarn rimraf ./dist/",
+		"compile": "npx sucrase src -d dist --transforms typescript",
+		"format": "prettier --write src",
+		"format:check": "prettier --check src"
+	},
+	"devDependencies": {
+		"prettier": "^2.8.2",
+		"rimraf": "^3.0.2",
+		"sucrase": "^3.29.0"
+	},
+	"packageManager": "yarn@3.3.1"
+}

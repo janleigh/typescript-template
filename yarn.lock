@@ -22,6 +22,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hazmi35/eslint-config@npm:^8.7.1":
+  version: 8.7.1
+  resolution: "@hazmi35/eslint-config@npm:8.7.1"
+  peerDependencies:
+    "@typescript-eslint/eslint-plugin": ">=5.45.1"
+    "@typescript-eslint/parser": ">=5.45.1"
+    eslint: ">=8.29.0"
+    typescript: ">=3.3.1 <5.0.0"
+  peerDependenciesMeta:
+    "@typescript-eslint/eslint-plugin":
+      optional: true
+    "@typescript-eslint/parser":
+      optional: true
+    typescript:
+      optional: true
+  checksum: 5a45bf79e2efdc70b3fa4fd2637d3d157a7cd0147412ac45019c61e432d226fa333a2299a885ca6a435ab7d436aaf11aa7f35361eb62cbd7725eb738b627c1c0
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.11.8":
   version: 0.11.8
   resolution: "@humanwhocodes/config-array@npm:0.11.8"
@@ -1260,14 +1279,36 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "typescript-template@workspace:."
   dependencies:
+    "@hazmi35/eslint-config": ^8.7.1
     "@typescript-eslint/eslint-plugin": latest
     "@typescript-eslint/parser": latest
     eslint: ^8.31.0
     prettier: ^2.8.2
     rimraf: ^3.0.2
     sucrase: ^3.29.0
+    typescript: ^4.9.4
   languageName: unknown
   linkType: soft
+
+"typescript@npm:^4.9.4":
+  version: 4.9.4
+  resolution: "typescript@npm:4.9.4"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: e782fb9e0031cb258a80000f6c13530288c6d63f1177ed43f770533fdc15740d271554cdae86701c1dd2c83b082cea808b07e97fd68b38a172a83dbf9e0d0ef9
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.9.4#~builtin<compat/typescript>":
+  version: 4.9.4
+  resolution: "typescript@patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=ad5954"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 1caaea6cb7f813e64345190fddc4e6c924d0b698ab81189b503763c4a18f7f5501c69362979d36e19c042d89d936443e768a78b0675690b35eb663d19e0eae71
+  languageName: node
+  linkType: hard
 
 "uri-js@npm:^4.2.2":
   version: 4.4.1

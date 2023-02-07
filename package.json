@@ -13,16 +13,10 @@
 		"build:production": "yarn build:clean && yarn format:check && yarn lint && yarn compile",
 		"build:clean": "yarn rimraf ./dist/",
 		"compile": "npx sucrase src -d dist --transforms typescript",
-		"lint": "eslint src --ext .ts",
-		"lint:fix": "eslint src --ext .ts --fix",
 		"format": "prettier --write src",
 		"format:check": "prettier --check src"
 	},
 	"devDependencies": {
-		"@hazmi35/eslint-config": "^8.7.1",
-		"@typescript-eslint/eslint-plugin": "latest",
-		"@typescript-eslint/parser": "latest",
-		"eslint": "^8.31.0",
 		"prettier": "^2.8.2",
 		"rimraf": "^3.0.2",
 		"sucrase": "^3.29.0",

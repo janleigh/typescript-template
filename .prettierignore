@@ -1,5 +1,6 @@
 # Directories
 .yarn/
+dist/
 build/
 node_modules/
 public/

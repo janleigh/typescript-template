@@ -1,11 +1,11 @@
 {
 	"compilerOptions": {
 		"outDir": "dist/",
-		"module": "ES6",
+		"module": "ESNext",
 		"moduleResolution": "Node",
-		"target": "ES6",
+		"target": "ESNext",
 		"lib": [ "ESNext", "DOM" ],
-		
+	
 		"strict": true,
 		"forceConsistentCasingInFileNames": true,
 		"noFallthroughCasesInSwitch": true,
@@ -14,13 +14,18 @@
 		"skipLibCheck": true,
 		"esModuleInterop": true,
 		"resolveJsonModule": true,
+		"experimentalDecorators": true,
 		"allowSyntheticDefaultImports": true,
 	},
 	"exclude": [
 		".git/",
 		".github/",
 		".vscode/",
-		"dist/"
+		"build/",
+		"dist/",
+		"node_modules/"
 	],
-	"include": [ "src/**/*" ]
+	"include": [
+		"src/**/*"
+	]
 }  

@@ -9,4 +9,5 @@
 
 # Directories
 dist/
+build/
 node_modules/

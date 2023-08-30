@@ -19,7 +19,7 @@ this readme sucks
 
    If you enjoyed it and would like to show your appreciation, you may want to tip me here.
 
-   It is never required but always appreciated. Thanks from the bottom of my heart!
+   It is never required but always appreciated. Thanks from the bottom of my heart! 💖
 
    |  Donate With  |                      Address                       |
    | :-----------: | :------------------------------------------------: |
